@@ -1,0 +1,29 @@
+.home {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+
+  h1 {
+    font-size: 4vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  p {
+    font-size: 3vw;
+    font-family: Roboto, sans-serif;
+    color: white;
+    margin: 10vw;
+  }
+
+  &-bottom-text-container {
+    width: 50%;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}

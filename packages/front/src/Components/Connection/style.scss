@@ -1,0 +1,88 @@
+.connection {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+
+  h1 {
+    font-size: 4vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  $primary: #11998e;
+  $secondary: #38ef7d;
+  $white: #fff;
+  $gray: #9b9b9b;
+  .form {
+    &-group {
+      position: relative;
+      padding: 2vw 0 0;
+      margin-top: 2vw;
+      width: 90%;
+    }
+    &-field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 0.5vw solid $gray;
+      outline: 0;
+      font-size: 4vw;
+      color: $white;
+      padding: 3vw 0;
+      background: transparent;
+      transition: border-color 0.2s;
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      &:placeholder-shown ~ .form__label {
+        font-size: 6vw;
+        cursor: text;
+        top: 4vw;
+      }
+    }
+    &-label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 3vw;
+      color: $gray;
+    }
+
+    &-field:focus {
+      ~ .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 3vw;
+        color: $primary;
+        font-weight: 700;
+      }
+    }
+    &-field {
+      &:required,
+      &:invalid {
+        box-shadow: none;
+      }
+    }
+  }
+
+  input[type='submit'] {
+    border: 0;
+    background-color: rgb(65, 55, 55);
+    margin-top: 6vw;
+    padding: 4vw 0;
+    width: 60%;
+    color: white;
+    font-weight: 700;
+    font-size: 4vw;
+    font-family: Roboto, sans-serif;
+    font-family: inherit;
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "partyplay prototype project - web socket",
+  "main": "server.js",
+  "scripts": {
+    "start:build": "node --experimental-modules --es-module-specifier-resolution=node server",
+    "start": "nodemon --experimental-modules --es-module-specifier-resolution=node server",
+    "test": "jest"
+  },
+  "keywords": [
+    "partygame",
+    "websocket"
+  ],
+  "author": "Hugo DEL PIA",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "http": "^0.0.1-security",
+    "mongoose": "^5.12.14",
+    "node-static": "^0.7.11",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.25.1",
+    "jest": "^27.2.0",
+    "prettier": "^2.3.2"
+  }
+}

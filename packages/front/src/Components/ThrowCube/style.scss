@@ -1,0 +1,80 @@
+.throw-cube, .throw-cube-disabled {
+    transition: all 0.2s;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+
+    h1 {
+        font-size: 6vw;
+        font-family: Roboto, sans-serif;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 20vw;
+    }
+
+    &-cube-container {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin-bottom: 20vw;
+    }
+
+    &-cube-slot,
+    &-cube-wrapper {
+        width: 25vw;
+        height: 25vw;
+        background-color: rgb(148, 148, 148);
+        div{
+            transition: all 0s;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0%;
+            img {
+                width: 60%;
+                height: 60%;
+                margin: 20%;
+                object-fit: contain;
+            }
+        }
+    }
+    &-cube-slot {
+        overflow: hidden;
+        div {
+            transition: all 1s;
+            margin-top: -1000%;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+    }
+    &-cube-div{
+        display: flex;
+        flex-direction: column;
+    }
+    &-weight-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        div{
+            width: 100%;
+            margin-bottom: 2vw;
+            overflow: hidden;
+            img {
+                width: 26vw;
+                height: 11vw;
+            }
+        }
+        
+    }
+
+}
+
+.throw-cube-disabled {
+    opacity: 0.2;
+}
