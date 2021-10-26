@@ -30,7 +30,7 @@ module.exports = {
   rules: {
     'no-debugger': 2,
     'no-console': [
-      2,
+      1,
       {
         allow: ['warn', 'error'],
       },

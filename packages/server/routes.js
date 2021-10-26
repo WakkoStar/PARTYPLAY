@@ -7,8 +7,10 @@ export default {
   DELETE_OF_SESSION: 'deleteOfSession',
   END_GAME: 'endGame',
   GET_PLAYERS_SESSION: 'getPlayersSession',
+  SEND_POSITION_MULTIPONG: 'sendPositionMultipong',
   SET_OBJECT: 'setObject',
   SET_ERROR: 'setError',
+  SHOW_POSITION_MULTIPONG: 'showPositionMultipong',
   THROW_OBJECT: 'throwObject',
   UPDATE_ROUTE: 'updateRoute',
 };

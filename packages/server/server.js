@@ -4,6 +4,7 @@ import {
   disconnectToSession,
   deleteOfSession,
 } from './gateways/connection';
+import { setPositionMultipong } from './gateways/multipong';
 import { updateParty } from './gateways/session';
 import { askObject, setObject } from './gateways/throwCube';
 import ROUTES from './routes';
@@ -42,6 +43,12 @@ io.on('connection', socket => {
   // THROW A CUBE GAME
   socket.on(ROUTES.SET_OBJECT, data => void setObject(data, socket));
   socket.on(ROUTES.ASK_OBJECT, data => void askObject(data, socket));
+
+  //MULTIPONG GAME
+  socket.on(
+    ROUTES.SEND_POSITION_MULTIPONG,
+    data => void setPositionMultipong(data, socket)
+  );
 });
 
 httpServer.listen(process.env.PORT || 8000, () => {
